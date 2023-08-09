@@ -6,25 +6,25 @@ const Layout = () => {
     <div className={classes.container}>
       <div className={classes.top}>
         <div className={classes.location}>
-          <p>Ohrid</p>
+          <p className={classes.bold}>Ohrid</p>
         </div>
         <div className={classes.temp}>
           <h1>Celsius</h1>
         </div>
         <div className={classes.description}>
-          <p>Clear</p>
+          <p className={classes.bold}>Clear</p>
         </div>
       </div>
 
       <div className={classes.bottom}>
         <div className={classes.feels}>
-          <p>Feels like</p>
+          <p className={classes.bold}>Feels like</p>
         </div>
         <div className={classes.humidity}>
-          <p>Humidity</p>
+          <p className={classes.bold}>Humidity</p>
         </div>
         <div className={classes.wind}>
-          <p>Wind</p>
+          <p className={classes.bold}>Wind</p>
         </div>
       </div>
     </div>
