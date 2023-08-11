@@ -49,12 +49,16 @@ const Layout = () => {
           ) : null}
         </div>
         <div className={classes.humidity}>
-          <p >Humidity</p>
-        {data.main ? <p className={classes.bold}>{data.main.humidity}%</p> : null}
+          <p>Humidity</p>
+          {data.main ? (
+            <p className={classes.bold}>{data.main.humidity}%</p>
+          ) : null}
         </div>
         <div className={classes.wind}>
           <p className={classes.bold}>Wind</p>
-          {data.wind ? <p className={classes.bold}>{data.wind.speed.toFixed()}kmh</p> : null}
+          {data.wind ? (
+            <p className={classes.bold}>{data.wind.speed.toFixed()}kmh</p>
+          ) : null}
         </div>
       </div>
     </div>
